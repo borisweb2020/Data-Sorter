@@ -1,0 +1,3 @@
+string
+12.56
+Another string
