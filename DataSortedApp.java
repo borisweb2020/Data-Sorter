@@ -15,7 +15,7 @@ public class DataSortedApp{
 				BufferedWriter stringWriter = new BufferedWriter(new FileWriter(stringOutputFileName, true))){
 
 			if(args.length == 0){
-				System.out.println("CLI correct input: java DataSortedApp in1.txt in2.txt");
+				System.out.println("CLI correct input: java DataSortedApp in1.txt in2.txt ...");
 				return;
 			}
 
@@ -39,7 +39,7 @@ public class DataSortedApp{
 							}
 						}
 					}
-					System.out.println("Filtering completed. Check the files.");
+					System.out.println("Filtering completed. Check the files in the resources/output folder");
 				} catch(IOException e) {
 					System.out.println("An error occurred: ");
 					e.printStackTrace();

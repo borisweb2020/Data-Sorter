@@ -1,9 +1,0 @@
-Lorem ipsum dolor
-Пример
-test
-Long
-New string
-Новая строка
-string
-Another string
-File
