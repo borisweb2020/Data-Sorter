@@ -1,6 +1,0 @@
-Lorem ipsum dolor
-Пример
-test
-Long
-5
-4.2
