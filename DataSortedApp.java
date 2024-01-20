@@ -6,9 +6,9 @@ import java.io.IOException;
 
 public class DataSortedApp{
 	public static void main(String[] args){
-		String intOutputFileName = "resources/output/out_integer.txt";
-		String floatOutputFileName = "resources/output/out_float.txt";
-		String stringOutputFileName = "resources/output/out_string.txt";
+		String intOutputFileName = "out_integer.txt";
+		String floatOutputFileName = "out_float.txt";
+		String stringOutputFileName = "out_string.txt";
 
 		try(BufferedWriter intWriter = new BufferedWriter(new FileWriter(intOutputFileName, true));
 				BufferedWriter floatWriter = new BufferedWriter(new FileWriter(floatOutputFileName, true));
@@ -20,8 +20,7 @@ public class DataSortedApp{
 			}
 
 			for(String fileName : args) {
-				String inputFileName = "resources/input/" + fileName;
-				try(BufferedReader reader = new BufferedReader(new FileReader(inputFileName))){
+				try(BufferedReader reader = new BufferedReader(new FileReader(fileName))){
 					String line;
 					while((line = reader.readLine()) != null){
 						try {
@@ -39,7 +38,7 @@ public class DataSortedApp{
 							}
 						}
 					}
-					System.out.println("Filtering completed. Check the files in the resources/output folder");
+					System.out.println("Filtering completed. Check the output files");
 				} catch(IOException e) {
 					System.out.println("An error occurred: ");
 					e.printStackTrace();
